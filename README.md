@@ -26,3 +26,65 @@ TestNG, Maven, and HTML reporting.
 ---
 
 ## 📁 Project Structure
+selenium-java-portfolio/
+├── src/
+│   ├── main/java/
+│   │   └── pages/
+│   │       ├── LoginPage.java
+│   │       ├── InventoryPage.java
+│   │       ├── CartPage.java
+│   │       └── CheckoutPage.java
+│   └── test/java/
+│       ├── tests/
+│       │   ├── LoginTest.java
+│       │   ├── CartTest.java
+│       │   ├── CheckoutTest.java
+│       │   └── E2ETest.java
+│       └── utils/
+│           ├── BaseTest.java
+│           └── ExtentReportManager.java
+├── reports/
+│   └── TestReport.html
+├── testng.xml
+└── pom.xml
+
+---
+
+## ✅ Test Cases Covered
+| Test | Description | Status |
+|---|---|---|
+| Successful Login | Verify valid user can login | ✅ Pass |
+| Add Item To Cart | Verify item added to cart correctly | ✅ Pass |
+| Remove Item From Cart | Verify item removed from cart | ✅ Pass |
+| Successful Checkout | Verify complete checkout flow | ✅ Pass |
+| Complete E2E Journey | Login → Cart → Checkout → Order confirmation | ✅ Pass |
+
+---
+
+## 🚀 How To Run
+
+**Prerequisites:**
+- Java JDK 19+
+- Maven
+- Chrome Browser
+
+**Run all tests:**
+```bash
+mvn clean test
+```
+
+**Run via TestNG suite:**
+Right click `testng.xml` → Run
+
+---
+
+## 📊 Test Report
+After running tests, HTML report is generated at:
+reports/TestReport.html
+
+---
+
+## 👩‍💻 Author
+**Shilpa Soni** — QA Engineer | CTFL Certified  
+📧 shilpasoni4991@gmail.com  
+🔗 [LinkedIn](https://www.linkedin.com/in/shilpasoni94)
